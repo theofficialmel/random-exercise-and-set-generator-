@@ -1,4 +1,13 @@
-//let execrises = ["push-ups", "sit-ups", "squats", "burpees", "plank"];
+let execrises = ["push-ups", "sit-ups", "squats", "burpees", "plank"];
+
+const generatebutton = document.getElementById("generatebutton");
+
+function generate() {
+randomindex = Math.floor(Math.random() * execrises.length);
+const randomexecrise = execrises[randomindex];
+document.querySelector("p").textContent = randomexecrise;
+console.log(randomexecrise);
+}
 
 //function shuffle(execrises) {
     //for (let i = execrises.length - 1; i > 0; i--) {
@@ -18,6 +27,11 @@ function getrandominclusive(min, max) {
 
 }
 console.log(randomsets);
+
+
+
+
+
 
 
 

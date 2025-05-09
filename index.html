@@ -1,32 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+<style>
+
+img{
+ display: block;
+ margin: auto;
+ 
+}
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>random exercise and sets generator</title>
-</head>
-<body>
-<h1>random sets & execrsis generator</h1>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-defualt navbar-expand-lg bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">how to guide</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">catalog</a>
+              </li>
+              </nav>
 
 
-<button id="setsButton" > Generate Sets</button>
+    <h1>random sets & execrsis generator</h1>
+    <h2></h2>
+    <strong><p>your execrsis and sets will appear here:</p></strong>
+    <p id="randomExecrsis"></p>
+    <p id="randomSets"></p>
+    <button id="exerciseButton">Generate Exercise</button>
 
-<script>
-    document.getElementById("setsButton").onclick = function(randomSets) {
+    <button id="setsButton">Generate Sets</button>
+
+    <script>
+      document.getElementById("setsButton").onclick = function (randomSets) {
         randomSets = Math.floor(Math.random() * 100) + 1;
-        alert("random sets: " + randomSets);
-    }
- alert()
+        console.log("random sets: " + randomSets);
+        document.getElementById(
+          "randomSets"
+        ).textContent = `random sets: ${randomSets}`;
+
+      };
     
-</script>
+    </script>
+    <script>
+      let execrise = ["push-ups", "sit-ups", "squats", "burpees", "plank", "jumping jacks", "lunges", "mountain climbers", "high knees", "tricep dips", "bicycle crunches", "leg raises", "glute bridges", "shoulder taps", "plank jacks", "side lunges", "reverse lunges", "wall sits", "calf raises", "supermans"];
+     document.getElementById("exerciseButton").onclick = function (event) {
+        let randomIndex = Math.floor(Math.random() * execrise.length);
+        let randomWord = execrise[randomIndex];
+        console.log(randomWord, randomIndex);
+        document.getElementById(
+          "randomExecrsis"
+        ).textContent = `random execrsis: ${randomWord}`;
+        console.log(`random execrsis: ${randomWord}`);
+      }
+    </script>
+
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <section class = "hero-section">
+        
+        <div class="container-fluid">
+    
+        <div class="row">
+
+        <div class="col-md-6">
+            <div class="col-md-6">
+                <img src ="https://assets.clevelandclinic.org/transform/26568096-7fcc-4713-898d-ca1ed6c84895/exerciseHowOften-944015592-770x533-1_jpg" alt="Placeholder Image" class="img-fluid">
+            </div>
+            <h1>Time To Sweat</h1><br>
+            <br>
+            <br>
+           
+
+    
+    
+     <div class container>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <h2>Column 1</h2>
+          <p>Stay Hydrated </p>
+          <img src="https://www.shutterstock.com/image-vector/silhouette-man-drinking-water-bottle-600nw-1122992477.jpg" alt="Silhouette of a man drinking water from a bottle" class="img-fluid">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <h2>Column 2</h2>
+          <p>Dont forget to Stretch </p>
+          <img src="https://www.mayoclinic.org/-/media/kcms/gbs/patient-consumer/images/2022/02/22/15/36/wf619106-2-quadriceps-stretch-468x263.jpg" alt="">
+        </div>
+       
+
+
+
+      
+
+
+
+
+<table>
 
 
 
 
 
 
-<script src="script.js" defer> </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>   
-</body>
+<tr>
+  <th>Exercise</th>
+  <th>Sets</th>
+  <th>Reps</th>
+</tr>
+<tr>
+  <td>push-ups</td>
+  <td>3</td>
+  <td>10-15</td>
+</tr>
+<tr>
+  <td>sit-ups</td>
+  <td>3</td>
+  <td>15-20</td>
+  </tr>
+<tr>
+  <td>squats</td>
+  <td>3</td>
+  <td>10-15</td>
+</tr>
+<tr>
+  <td>burpees</td>
+  <td>3</td>
+  <td>10-15</td>
+
+
+
+
+
+
+
+
+</table>
+  </body>
+  //<footer>
+    
 </html>

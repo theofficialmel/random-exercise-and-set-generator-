@@ -1,0 +1,47 @@
+body {
+    background-color: #da1721;
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+
+p{
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+footer {
+    margin-top: 3px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    background-color: #f7f3f3;
+    padding: 10px;
+    position: fixed;
+}
+ 
+section{
+padding: 10px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+
+}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
