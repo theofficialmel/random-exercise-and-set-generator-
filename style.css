@@ -37,8 +37,12 @@ padding: 10px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 }
-{}
-{}
+title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: #f7eded;
+}
+
 {}
 {}
 {}

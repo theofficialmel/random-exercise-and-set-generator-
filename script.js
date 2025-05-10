@@ -29,6 +29,28 @@ function getrandominclusive(min, max) {
 console.log(randomsets);
 
 
+      let execrise = ["push-ups", "sit-ups", "squats", "burpees", "plank", "jumping jacks", "lunges", "mountain climbers", "high knees", "tricep dips", "bicycle crunches", "leg raises", "glute bridges", "shoulder taps", "plank jacks", "side lunges", "reverse lunges", "wall sits", "calf raises", "supermans"];
+     document.getElementById("exerciseButton").onclick = function (event) {
+        let randomIndex = Math.floor(Math.random() * execrise.length);
+        let randomWord = execrise[randomIndex];
+        console.log(randomWord, randomIndex);
+        document.getElementById(
+          "randomExecrsis"
+        ).textContent = `random execrsis: ${randomWord}`;
+        console.log(`random execrsis: ${randomWord}`);
+      }
+
+      document.getElementById("setsButton").onclick = function (randomSets) {
+        randomSets = Math.floor(Math.random() * 100) + 1;
+        console.log("random sets: " + randomSets);
+        document.getElementById(
+          "randomSets"
+        ).textContent = `random sets: ${randomSets}`;
+
+      };
+
+
+    
 
 
 
